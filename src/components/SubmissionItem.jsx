@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './styles/SubmissionItem.css';
+import '../styles/SubmissionItem.css';
 
 class SubmissionItem extends Component {
   constructor() {

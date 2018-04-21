@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import './styles/Lookup.css';
+import '../styles/Lookup.css';
 
 class Lookup extends Component {
   constructor() {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import SubmissionItem from './components/SubmissionItem.jsx';
-import './styles/SubmissionList.css';
+import '../styles/SubmissionList.css';
 
 class SubmissionList extends Component {
   constructor() {
