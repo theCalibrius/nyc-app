@@ -20,13 +20,31 @@ class Lookup extends Component {
   }
 
   handleFileUpload = () => {
-    const data = new FormData();
-    const API_KEY = 'api_key=ioPi-CX1OzLbZEYMaqpyLQ'
-    data.append('image', this.state.selectedImage, this.state.selectedImage.name);
-    axios.post('https://www.headlightlabs.com/api/gcpd_lookup?' + API_KEY, data)
-      .then((res) => {
-        console.log(res);
-      })
+    if (this.state.selectedImage) {
+      const data = new FormData();
+      const API_KEY = 'api_key=ioPi-CX1OzLbZEYMaqpyLQ'
+      data.append('image', this.state.selectedImage, this.state.selectedImage.name);
+      axios.post('https://www.headlightlabs.com/api/gcpd_lookup?' + API_KEY, data)
+        .then((res) => {
+          console.log(res);
+        });
+    } else {
+      alert('First select an image');
+    }
+  }
+
+  handleReport = () => {
+    if (this.state.selectedImage) {
+      const data = new FormData();
+      const API_KEY = 'api_key=ioPi-CX1OzLbZEYMaqpyLQ'
+      data.append('image', this.state.selectedImage, this.state.selectedImage.name);
+      axios.post('https://www.headlightlabs.com/api/gcpd_report?' + API_KEY, data)
+        .then((res) => {
+          console.log(res);
+        });
+    } else {
+      alert('First select an image');
+    }
   }
 
   render() {
@@ -36,6 +54,7 @@ class Lookup extends Component {
         <h2>Lookup</h2>
         <input type="file" onChange={this.handleSelectFile} />
         <button onClick={this.handleFileUpload}>Submit</button>
+        <button onClick={this.handleReport}>Report</button>
       </div>
     );
   }
