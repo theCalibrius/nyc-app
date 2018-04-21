@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import Lookup from './components/Lookup.jsx';
-import SubmissionList from './components/SubmissionList.jsx';
-import './styles/App.css';
+import logo from '../wc_logo.svg';
+import Lookup from './Lookup.jsx';
+import SubmissionList from './SubmissionList.jsx';
+import '../styles/App.css';
 
 class App extends Component {
   render() {
