@@ -15,7 +15,7 @@ hr {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  max-height: 700px;
+  max-height: 600px;
 }
 
 .lookupContainer, .resultsContainer {
