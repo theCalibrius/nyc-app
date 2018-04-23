@@ -39,6 +39,10 @@ class Lookup extends Component {
           this.setState({
             lookupResults: res.data
           });
+        })
+        .catch((error) => {
+          alert('There was an error uploding your image.');
+          console.log('error: ', error);
         });
     } else {
       alert('First select an image');
@@ -54,7 +58,11 @@ class Lookup extends Component {
         .then((res) => {
           this.setState({
             reportSuccessMessage: res.data.status
-          })
+          });
+        })
+        .catch((error) => {
+          alert('There was an error submitting your report.');
+          console.log('error: ', error);
         });
     } else {
       alert('First select an image');

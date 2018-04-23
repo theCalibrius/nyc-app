@@ -42,3 +42,11 @@ hr {
   justify-content: space-around;
   align-items: center;
 }
+
+.submittedImage {
+  display: block;
+  max-width: 250px;
+  max-height: 250px;
+  width: auto;
+  height: auto;
+}
