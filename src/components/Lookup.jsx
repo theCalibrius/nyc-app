@@ -73,7 +73,7 @@ class Lookup extends Component {
         <div className="lookupContainer">
           <h2>Lookup</h2>
           <div className="inputFields">
-            <input type="file" onChange={this.handleSelectFile} />
+            <input type="file" accept="image/*" onChange={this.handleSelectFile} />
             <button onClick={this.handleFileUpload}>Submit</button>
           </div>
         </div>
