@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../wc_logo.png';
+import logo from '../wayne_logo.png';
 import Lookup from './Lookup.jsx';
 import '../styles/App.css';
 
